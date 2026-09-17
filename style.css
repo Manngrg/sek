@@ -784,7 +784,7 @@ p {
   font-weight: 700;
 }
 
-.menu-footer-note p + p {
+.menu-footer-note p+p {
   margin-top: .3rem;
 }
 
@@ -796,7 +796,7 @@ p {
     line-height: 1.6;
   }
 
-  .menu-footer-note p + p {
+  .menu-footer-note p+p {
     margin-top: .2rem;
   }
 }
