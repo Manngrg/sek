@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurung Sekuwa — Authentic Himalayan &amp; barbeque</title>
+  <meta name="description"
+    content="Gurung Sekuwa — smoky, hand-skewered sekuwa cooked over open wood fire. Mutton, chicken, buff, duck, pork, momo and a full bar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="khukuri-removebg-preview.png">
+  <link rel="apple-touch-icon" href="khukuri-removebg-preview.png">
+  <meta name="theme-color" content="#11110f">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page-background" aria-hidden="true">
+    <video class="page-background-video" autoplay muted loop playsinline>
+      <source src="site-background.mp4" type="video/mp4">
+    </video>
+    <div class="page-background-scrim"></div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <img src="khukuri-removebg-preview.png" alt="Khukuri and sekuwa" class="brand-mark">
+        <span class="brand-text">Gurung<em>Sekuwa</em></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#menu">Menu</a>
+        <a href="#story">Why Us</a>
+        <a href="#gallery">From the Fire</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+9779705465840" class="phone-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+977 97‑0546‑5840</span>
+        </a>
+        <a href="tel:+9779705465840" class="btn btn-ember btn-small">Reserve a Table</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline poster="hero-poster.jpg">
+        <!-- Drop your licensed clip here, e.g. hero-grill.mp4 -->
+        <source src="hero-grill.mp4" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="hero-inner">
+      <p class="hero-kicker">Authentic Himalayan barbeque</p>
+      <h1 class="hero-mark">Gurung<br>Sekuwa</h1>
+      <p class="hero-sub">Mutton, chicken, buff, duck and pork — skewered by hand, smoked slow, and pulled off the fire
+        when the char is just right.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-ember">See the Menu</a>
+        <a href="#visit" class="btn btn-outline">Find Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu-section" id="menu">
+    <div class="section-head">
+      <h2>The Menu</h2>
+      <p>Everything is grilled to order — expect a short wait when the fire's busy. Prices in NPR.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab is-active" data-cat="mutton" role="tab" aria-selected="true">Mutton</button>
+      <button class="menu-tab" data-cat="chicken" role="tab" aria-selected="false">Chicken</button>
+      <button class="menu-tab" data-cat="buff" role="tab" aria-selected="false">Buff</button>
+      <button class="menu-tab" data-cat="duck" role="tab" aria-selected="false">Duck</button>
+      <button class="menu-tab" data-cat="pork" role="tab" aria-selected="false">Pork</button>
+      <button class="menu-tab" data-cat="momo" role="tab" aria-selected="false">Momo</button>
+      <button class="menu-tab" data-cat="mre" role="tab" aria-selected="false">MRE</button>
+      <button class="menu-tab" data-cat="drinks" role="tab" aria-selected="false">Drinks</button>
+    </div>
+
+    <div class="menu-panels" id="menuPanels">
+
+      <div class="menu-panel is-active" data-panel="mutton" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Mutton Sekuwa</span><span class="item-leader"></span><span class="item-price">Rs.
+              650</span></li>
+          <li><span class="item-name">Mutton Ribs Sekuwa</span><span class="item-leader"></span><span
+              class="item-price">Rs. 700</span></li>
+          <li><span class="item-name">Mutton Choila</span><span class="item-leader"></span><span class="item-price">Rs.
+              600</span></li>
+          <li><span class="item-name">Ledo Mutton (curry)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 650</span></li>
+          <li><span class="item-name">Mutton Tas (dry fry)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 600</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="chicken" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Chicken Sekuwa</span><span class="item-leader"></span><span class="item-price">Rs.
+              500</span></li>
+          <li><span class="item-name">Chicken Choila</span><span class="item-leader"></span><span class="item-price">Rs.
+              480</span></li>
+          <li><span class="item-name">Chicken Lollypop</span><span class="item-leader"></span><span
+              class="item-price">Rs. 450</span></li>
+          <li><span class="item-name">Tandoori Chicken (half)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 550</span></li>
+          <li><span class="item-name">BBQ Chicken Wings</span><span class="item-leader"></span><span
+              class="item-price">Rs. 420</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="buff" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Buff Sekuwa</span><span class="item-leader"></span><span class="item-price">Rs.
+              450</span></li>
+          <li><span class="item-name">Buff Choila</span><span class="item-leader"></span><span class="item-price">Rs.
+              420</span></li>
+          <li><span class="item-name">Buff Chhoila Dry</span><span class="item-leader"></span><span
+              class="item-price">Rs. 430</span></li>
+          <li><span class="item-name">Buff Bhutan (fried)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 400</span></li>
+          <li><span class="item-name">Buff Ledo (curry)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 430</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="duck" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Duck Sekuwa</span><span class="item-leader"></span><span class="item-price">Rs.
+              750</span></li>
+          <li><span class="item-name">Duck Choila</span><span class="item-leader"></span><span class="item-price">Rs.
+              720</span></li>
+          <li><span class="item-name">Duck Roast</span><span class="item-leader"></span><span class="item-price">Rs.
+              780</span></li>
+          <li><span class="item-name">Duck Curry</span><span class="item-leader"></span><span class="item-price">Rs.
+              750</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="pork" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Pork Sekuwa</span><span class="item-leader"></span><span class="item-price">Rs.
+              550</span></li>
+          <li><span class="item-name">Pork Choila</span><span class="item-leader"></span><span class="item-price">Rs.
+              520</span></li>
+          <li><span class="item-name">Pork Ribs</span><span class="item-leader"></span><span class="item-price">Rs.
+              600</span></li>
+          <li><span class="item-name">Pork Bhutan (fried)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 500</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="momo" role="tabpanel">
+        <ul class="menu-list">
+          <li><span class="item-name">Chicken Momo (steamed / fried / jhol)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 320</span></li>
+          <li><span class="item-name">Buff Momo</span><span class="item-leader"></span><span class="item-price">Rs.
+              280</span></li>
+          <li><span class="item-name">Pork Momo</span><span class="item-leader"></span><span class="item-price">Rs.
+              300</span></li>
+          <li><span class="item-name">Veg Momo</span><span class="item-leader"></span><span class="item-price">Rs.
+              260</span></li>
+          <li><span class="item-name">C-Momo (chilli momo)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 340</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="mre" role="tabpanel">
+        <p class="panel-note">Meal Ready to Eat — the sides and snacks that show up before anything else.</p>
+        <ul class="menu-list">
+          <li><span class="item-name">French Fry</span><span class="item-leader"></span><span class="item-price">Rs.
+              180</span></li>
+          <li><span class="item-name">Chatpate</span><span class="item-leader"></span><span class="item-price">Rs.
+              150</span></li>
+          <li><span class="item-name">Peanuts Fry (Masala Badam)</span><span class="item-leader"></span><span
+              class="item-price">Rs. 140</span></li>
+          <li><span class="item-name">Bhatmas Sadeko</span><span class="item-leader"></span><span class="item-price">Rs.
+              150</span></li>
+          <li><span class="item-name">Papad</span><span class="item-leader"></span><span class="item-price">Rs.
+              100</span></li>
+          <li><span class="item-name">Aloo Sadeko</span><span class="item-leader"></span><span class="item-price">Rs.
+              160</span></li>
+          <li><span class="item-name">Wai Wai Sandeko</span><span class="item-leader"></span><span
+              class="item-price">Rs. 170</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-panel" data-panel="drinks" role="tabpanel">
+        <div class="drink-tabs" id="drinkTabs">
+          <button class="drink-tab is-active" data-drink="soft">Soft Drinks</button>
+          <button class="drink-tab" data-drink="beer">Beer</button>
+          <button class="drink-tab" data-drink="hard">Hard Drinks</button>
+        </div>
+
+        <div class="drink-panels" id="drinkPanels">
+          <ul class="menu-list drink-panel is-active" data-drinkpanel="soft">
+            <li><span class="item-name">Coca-Cola</span><span class="item-leader"></span><span class="item-price">Rs.
+                100</span></li>
+            <li><span class="item-name">Fanta</span><span class="item-leader"></span><span class="item-price">Rs.
+                100</span></li>
+            <li><span class="item-name">Sprite</span><span class="item-leader"></span><span class="item-price">Rs.
+                100</span></li>
+            <li><span class="item-name">Lemon Soda</span><span class="item-leader"></span><span class="item-price">Rs.
+                150</span></li>
+            <li><span class="item-name">Sweet / Salted Lassi</span><span class="item-leader"></span><span
+                class="item-price">Rs. 180</span></li>
+          </ul>
+          <ul class="menu-list drink-panel" data-drinkpanel="beer">
+            <li><span class="item-name">Gorkha Beer</span><span class="item-leader"></span><span class="item-price">Rs.
+                350</span></li>
+            <li><span class="item-name">Everest Beer</span><span class="item-leader"></span><span class="item-price">Rs.
+                350</span></li>
+            <li><span class="item-name">Tuborg</span><span class="item-leader"></span><span class="item-price">Rs.
+                380</span></li>
+            <li><span class="item-name">Nepal Ice</span><span class="item-leader"></span><span class="item-price">Rs.
+                360</span></li>
+          </ul>
+          <ul class="menu-list drink-panel" data-drinkpanel="hard">
+            <li><span class="item-name">Khukri Rum (peg)</span><span class="item-leader"></span><span
+                class="item-price">Rs. 250</span></li>
+            <li><span class="item-name">8848 Whisky (peg)</span><span class="item-leader"></span><span
+                class="item-price">Rs. 300</span></li>
+            <li><span class="item-name">Local Raksi</span><span class="item-leader"></span><span class="item-price">Rs.
+                200</span></li>
+            <li><span class="item-name">Gin &amp; Tonic</span><span class="item-leader"></span><span
+                class="item-price">Rs. 380</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CHEF SPOTLIGHT ============ -->
+  <section class="chef-spotlight" id="chef">
+    <video class="chef-spotlight-video" autoplay muted loop playsinline>
+      <source src="chef-spotlight.mp4" type="video/mp4">
+    </video>
+    <div class="chef-spotlight-scrim"></div>
+    <div class="chef-spotlight-copy">
+      <span class="chef-spotlight-kicker">Grilled to perfection</span>
+      <h2>Made to your taste.</h2>
+      <p>Every skewer is seasoned, watched, and pulled from the fire at just the right moment — smoky, tender, and
+        cooked exactly how you like it.</p>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="story" id="story">
+    <div class="story-visual" aria-hidden="true">
+      <div class="story-grill">
+        <video class="story-video" autoplay muted loop playsinline>
+          <source src="story-grill.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="story-badge">
+        <img src="logo.jpeg" alt="Himali Khasi logo" class="story-badge-image">
+      </div>
+    </div>
+    <div class="story-copy">
+      <h2>Sourced from Himali Khasi. Grilled with tradition.
+      </h2>
+      <ul class="story-highlights">
+        <li><strong>No artificial ingredients</strong><span>Clean, honest flavors in every bite.</span></li>
+        <li><strong>Freshly grilled to order</strong><span>Every skewer goes straight from the grill to your
+            table.</span></li>
+        <li><strong>Traditional herb marinade</strong><span>Marinated with timur, mountain herbs, and house
+            spices.</span></li>
+        <li><strong>Premium cuts, perfected</strong><span>Quality meat grilled with the char and tenderness you
+            love.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <h2>From the Fire</h2>
+    </div>
+
+    <div class="gallery-marquee" aria-label="Menu gallery">
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.58.58 (1).jpeg" alt="Mutton sekuwa"></div>
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.58.58.jpeg" alt="Skewered grill platter">
+        </div>
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.59.36.jpeg" alt="Grilled specialty dish">
+        </div>
+        <div class="gallery-item"><img src="Buff-Sekuwa-scaled.jpg" alt="Buff sekuwa platter"></div>
+        <div class="gallery-item"><img src="images.jpg" alt="Traditional Nepali sekuwa spread"></div>
+
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.58.58 (1).jpeg" alt="Mutton sekuwa"></div>
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.58.58.jpeg" alt="Skewered grill platter">
+        </div>
+        <div class="gallery-item"><img src="WhatsApp Image 2026-09-15 at 09.59.36.jpeg" alt="Grilled specialty dish">
+        </div>
+        <div class="gallery-item"><img src="Buff-Sekuwa-scaled.jpg" alt="Buff sekuwa platter"></div>
+        <div class="gallery-item"><img src="images.jpg" alt="Traditional Nepali sekuwa spread"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <div class="visit-info">
+        <h2>Come hungry.</h2>
+        <div class="visit-block">
+          <span class="visit-label">Address</span>
+          <p>Tokha Road, Near Bhat-Bhateni</p>
+        </div>
+        <div class="visit-block">
+          <span class="visit-label">Hours</span>
+          <p>Sun – Fri, 12:00 pm – 10:30 pm<br>Saturday, 12:00 pm – 11:00 pm</p>
+        </div>
+        <div class="visit-block">
+          <span class="visit-label">Phone</span>
+          <p><a href="tel:+9779705465840">+977 97‑0546‑5840</a></p>
+        </div>
+        <a href="tel:+9779705465840" class="btn btn-ember">Reserve a Table</a>
+      </div>
+      <div class="visit-map">
+        <a class="map-link" href="https://maps.app.goo.gl/PJSFem6KDWLtecoK9" target="_blank" rel="noopener noreferrer"
+          aria-label="Open Gurung Sekuwa location in Google Maps">
+          <iframe title="Gurung Sekuwa location map"
+            src="https://www.google.com/maps?q=Tokha%20Road%20Near%20Bhat-Bhateni%20Kathmandu&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+          </iframe>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-text">Gurung<em>Sekuwa</em></span>
+        <p> Authentic Himalayan Barbeque</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Explore</span>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">From the Fire</a>
+        <a href="#visit">Visit</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-heading">Follow</span>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Gurung Sekuwa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
